@@ -21,11 +21,9 @@
                     }
                     $('#cards').append(`
                     
-                    <div class='card'>
+                    <div class='card' id='id${obj.id}' onclick='setprofile(${obj.id})'>
                     
-                            <div id='hero' style="display:none">
-                            ${JSON.stringify(obj)}
-                            </div>
+                            <div class='hero' style="display:none">${JSON.stringify(obj)}</div>
 
                             <img src='${obj.image.url}'>
                                     <div class='cardName'>
@@ -45,3 +43,12 @@
  
      
 })();
+
+var temp;
+
+function setprofile(cardId){
+    var string="id"+cardId;
+    var obj=$("#"+string+" "+".hero").text();
+    temp=JSON.parse(obj);
+    console.log(temp);
+  }
