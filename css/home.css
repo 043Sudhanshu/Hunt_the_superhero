@@ -1,15 +1,20 @@
 body{
     margin:0;
-    background-color: gray;
+    background-color: black;
+    background-image: url('https://wallpaperaccess.com/full/1553494.jpg');
+    background-position: center;
+    background-size: cover;
+   
 }
 #nav{
     display: flex;
     justify-content: space-between;
+
     height:50px;
     align-items: center;
     padding: 20px;
     color:white;
-    background-color: black;
+
 }
 #nav div{
     width:auto;
@@ -55,4 +60,68 @@ body{
     justify-content: center;
     align-items: center;
 }
+#home{
+    display: flex;
+     margin-top: 80px;
+     transform-style: preserve-3d;
+     perspective: 1000px;
+}
 
+#home>div{
+ width: 50%;
+    height:auto;
+   
+}
+
+.cube{
+    margin:auto;
+    margin-top:50px;
+    height:300px;
+    width:300px;
+    border:2px solid black;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    transform-style:preserve-3d;
+    animation: change 10s linear infinite;
+}
+.cube>div{
+    height:300px;
+    width:300px;
+    position: absolute;
+    opacity: 0.5;
+    overflow: hidden;
+}
+.one{
+    background-color: blue;
+    transform: translateZ(150px);
+}
+.two{
+    background-color: yellow;
+    transform: translateZ(-150px);
+}
+  .three{
+    background-color: red;
+    transform:rotateY(90deg) translateZ(150px) ;
+}
+  .four{
+    background-color: green;
+    transform: rotateY(-90deg) translateZ(150px);
+}
+.five{
+    background-color: black;
+    transform: rotateX(90deg) translateZ(150px);
+}
+.six{
+    background-color: black;
+    transform: rotateX(-90deg) translateZ(150px);
+}
+@keyframes change{
+    from{
+        transform: rotateY(0deg);
+    }
+    to{
+        transform: rotateX(360deg) rotateY(360deg);
+    }
+}
