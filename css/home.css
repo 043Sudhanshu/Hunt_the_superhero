@@ -4,7 +4,7 @@ body{
     background-image: url('https://nakedsecurity.sophos.com/wp-content/uploads/sites/2/2019/04/shutterstock_407554567-compressor-1.jpg');
     background-position: center;
     background-size: cover;
-    height:100%;
+    height:100vh;
     width:100%;
 }
 #nav{
@@ -175,6 +175,14 @@ a{
     right:30px;
     top:30px;
     }
+    #cards>div{
+        height: 235px;
+        width: 160px;
+    }
+    #cards>div:hover{
+        height: 266px;
+        width: 180px;
+    }
 
  .one{
     background-image: url('https://www.hdwallpapers.in/download/gal_gadot_wonder_woman_hd-HD.jpg');
@@ -201,4 +209,13 @@ a{
     transform: rotateX(-90deg) translateZ(100px);
 }   
      
+}
+
+.favSign{
+    position: absolute;
+    top:0px;
+    left:0px;
+    background-color: black;
+    color:red;
+    cursor: pointer;
 }

@@ -14,3 +14,4 @@ $('.speed').width(object.powerstats.speed+"%");
 $('.strength').width(object.powerstats.strength+"%");
 $('.durability').width(object.powerstats.durability+"%");
 },500);
+

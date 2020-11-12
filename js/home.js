@@ -30,8 +30,12 @@
                              
                                 <div class='cardName'>
                                         ${obj.name}
+                                        
                                     </div>
                                 </a>
+                               <div class='favSign'>
+                                <b>&nbsp; + &nbsp; </b>
+                               </div> 
                    </div> 
                   
                     `);
@@ -66,3 +70,19 @@ function setprofile(cardId){
         $('#details>h4').text(str.substring(0,l)+"|");
         l++;
   },70);
+
+
+   setInterval(() => {
+     var input=  $('input').val();
+       if(input!==""){
+        $('#home').hide();
+        $('#cards').show();
+       }else{
+        $('#cards').hide();
+        $('#home').show();    
+       }
+   }, 500);
+
+
+localStorage('favArray',JSON.stringify([]));
+
