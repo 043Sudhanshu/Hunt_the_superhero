@@ -1,6 +1,6 @@
 body{
     margin:0;
-    background-color: darkorange;
+    background-color: black;
     height:100vh;
     width:100%;
 }
@@ -26,7 +26,10 @@ input{
     background-color: black;
     text-align: center;
     color:gray;
-    font-size: 13px;
+    font-size: 32px;
+}
+input:focus{
+    outline: none;
 }
 a{
     text-decoration: none;
@@ -53,6 +56,7 @@ a{
     position: relative;
     box-shadow: 0 0 28px -1px black;  
     transition: all 0.2s;
+    overflow: hidden;
 }
 #cards>div:hover{
     height: 340px;

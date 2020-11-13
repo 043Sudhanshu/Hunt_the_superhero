@@ -8,7 +8,7 @@ for(let i=0;i<arr.length;i++){
         <div class='hero-${arr[i].id} common' > 
             
                     <img src='${arr[i].image.url}'>
-                    <div class='clear' onclick='Delete(${arr[i].id})'>
+                    <div class='clear' onclick='Delete(${arr[i].id})' ontouch='Delete(${arr[i].id})'>
                         <i class="fa fa-trash"></i>
                     </div>
         

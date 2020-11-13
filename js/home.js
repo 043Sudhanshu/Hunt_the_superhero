@@ -21,7 +21,7 @@
                     }
                     $('#cards').append(`
                   
-                    <div class='card' id='id${obj.id}' onclick='setprofile(${obj.id})'>
+                    <div class='card' id='id${obj.id}' onclick='setprofile(${obj.id})' ontouch='setprofile(${obj.id})'>
                     
                             <div class='hero' style="display:none">${JSON.stringify(obj)}</div>
 
