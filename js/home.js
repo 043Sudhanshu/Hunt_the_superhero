@@ -1,7 +1,11 @@
 (function(){
+    //fetching the input element
      let search=document.getElementById('name');
      let searchResults=document.getElementById('cards');
-     
+    
+     //when we press the key on search bar this function will be called
+     //and it will send req to api and api will return an array of objects
+
  search.onkeypress=function(){
    var name=search.value;
    $('#cards').text("");
@@ -9,9 +13,10 @@
     xhttp.open("get",`https://www.superheroapi.com/api.php/3509711479121402/search/${name}`, true);
     xhttp.send();
     xhttp.onload = function() {   
-     
+     // will parse the response
         let result=JSON.parse(xhttp.response);
-       
+       //if response is success take the array out of it and 
+       //append the card div with all the details from the array
        if(result.response==='success'){
                 let array=result.results;
                 let i=1;
@@ -53,6 +58,7 @@
 
 var temp;
 
+//when we click on any superhero after searching it will put it in local storage
 function setprofile(cardId){
     var string="id"+cardId;
     var obj=$("#"+string+" "+".hero").text();
