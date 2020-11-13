@@ -87,9 +87,11 @@ function setprofile(cardId){
 function AddToFav(data){
  var fav=$('#id'+data+" "+'.hero').text();
  var t=JSON.parse(fav);
- 
  var Arr=JSON.parse(localStorage.getItem('arr'));
  Arr.push(t);
- console.log(Arr);
+ $('#notification').css('opacity','1');
+ setTimeout(function(){
+    $('#notification').css('opacity','0');
+ },2000);
  localStorage.setItem('arr',JSON.stringify(Arr));
 }

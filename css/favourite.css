@@ -3,6 +3,7 @@ body{
     border:2px solid black;
     height:auto;
     width:100%;
+    background-color: gray;
 }
 #nav{
     width:100%;
@@ -32,7 +33,7 @@ a{
     height:330px;
     width:250px;
     overflow: hidden;
-
+    box-shadow: 14px 11px 19px -7px black;
     position: relative;
 }
 @media  screen and (max-width:700px){

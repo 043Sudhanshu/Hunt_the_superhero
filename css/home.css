@@ -53,7 +53,6 @@ a{
     height:330px;
     width:250px;
     margin: 30px;
-    
     position: relative;
     box-shadow: 0 0 28px -1px black;  
     transition: all 0.2s;
@@ -218,4 +217,15 @@ a{
     background-color: black;
     color:red;
     cursor: pointer;
+}
+#notification{
+    position: fixed;
+    top:20px;
+    right:20px;
+    background-color: greenyellow;
+    padding:10px;
+    color:black;
+    opacity: 0;
+    transition: all 2s;
+    border-radius: 10px;
 }

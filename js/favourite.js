@@ -5,11 +5,10 @@ var arr=JSON.parse(localStorage.getItem('arr'));
 for(let i=0;i<arr.length;i++){
     $('#list').append(
        `
-        
-        <div class='hero-${arr[i].id} common' onclick=''Delete(${arr[i].id})'> 
+        <div class='hero-${arr[i].id} common' > 
             
                     <img src='${arr[i].image.url}'>
-                    <div class='clear'>
+                    <div class='clear' onclick='Delete(${arr[i].id})'>
                         <i class="fa fa-trash"></i>
                     </div>
         
@@ -19,9 +18,6 @@ for(let i=0;i<arr.length;i++){
         
                     </div>
                 </div>
-        
-        
-        
         `
     );
 }
