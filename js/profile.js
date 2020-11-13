@@ -15,3 +15,11 @@ $('.strength').width(object.powerstats.strength+"%");
 $('.durability').width(object.powerstats.durability+"%");
 },500);
 
+$('.height').text(object.appearance.height[0]);
+$('.eye').text(object.appearance['eye-color']);
+$('.gender').text(object.appearance.gender);
+$('.weight').text(object.appearance.weight[1]);
+$('.hair').text(object.appearance['hair-color']);
+
+$('.base').text(object.work.base);
+$('.occupation').text(object.work.occupation);

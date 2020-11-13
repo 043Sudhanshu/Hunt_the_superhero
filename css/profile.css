@@ -29,6 +29,9 @@ img{
 }
 #name{
     margin: 20px;
+    background-color: black;
+    color:beige;
+    padding: 5px;
 }
 #powerstats{
     width:100%;
@@ -79,7 +82,7 @@ img{
     z-index: 2;
 }
 .combat{
-    background-color: #E91E63;
+    background-color: #ef6d9a;
 }
 .durability{
     background-color: #f58f87;
@@ -92,4 +95,11 @@ img{
 }
 .strength{
     background-color: #077fde;
+}
+#appearance{
+    text-align: center;
+    margin: 20px;
+}
+h1{
+    text-decoration: underline;
 }
