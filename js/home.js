@@ -33,7 +33,7 @@
                                         
                                     </div>
                                 </a>
-                               <div class='favSign'>
+                               <div class='favSign' onclick='AddToFav(${obj.id})' >
                                 <b>&nbsp; + &nbsp; </b>
                                </div> 
                    </div> 
@@ -61,7 +61,7 @@ function setprofile(cardId){
   }
 
 
-  var str='Hi i am sudhanshu chauhan .i have used an superhero api by which i am fetching all the details of selected super hero jus typ the name of superhero above and enjoy :)';
+  var str='Hi i am sudhanshu chauhan.I am using superhero api from which i am fetching all the details of selected super hero,just type the name of superhero above and enjoy :)';
   var l=0;
  var interval= setInterval(function(){
         if(l==str.length){
@@ -83,6 +83,14 @@ function setprofile(cardId){
        }
    }, 500);
 
+localStorage.setItem('arr',JSON.stringify([]));
 
-localStorage('favArray',JSON.stringify([]));
-
+function AddToFav(data){
+ var fav=$('#id'+data+" "+'.hero').text();
+ var t=JSON.parse(fav);
+ 
+ var Arr=JSON.parse(localStorage.getItem('arr'));
+ Arr.push(t);
+ console.log(Arr);
+ localStorage.setItem('arr',JSON.stringify(Arr));
+}

@@ -53,7 +53,7 @@ a{
     height:330px;
     width:250px;
     margin: 30px;
-    overflow: hidden;
+    
     position: relative;
     box-shadow: 0 0 28px -1px black;  
     transition: all 0.2s;
@@ -213,8 +213,8 @@ a{
 
 .favSign{
     position: absolute;
-    top:0px;
-    left:0px;
+    top:-5px;
+    left:-5px;
     background-color: black;
     color:red;
     cursor: pointer;
