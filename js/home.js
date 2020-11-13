@@ -83,7 +83,6 @@ function setprofile(cardId){
        }
    }, 500);
 
-localStorage.setItem('arr',JSON.stringify([]));
 
 function AddToFav(data){
  var fav=$('#id'+data+" "+'.hero').text();
