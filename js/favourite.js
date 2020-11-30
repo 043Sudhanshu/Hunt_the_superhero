@@ -3,9 +3,9 @@ var arr=JSON.parse(localStorage.getItem('arr'));
 
 
 for(let i=0;i<arr.length;i++){
-    $('#list').append(
-       `
-        <div class='hero-${arr[i].id} common' > 
+
+       document.getElementById('list').innerHTML+=
+       ` <div class='hero-${arr[i].id} common' > 
             
                     <img src='${arr[i].image.url}'>
                     <div class='clear' onclick='Delete(${arr[i].id})' ontouch='Delete(${arr[i].id})'>
@@ -18,12 +18,11 @@ for(let i=0;i<arr.length;i++){
         
                     </div>
                 </div>
-        `
-    );
+        `;
 }
 
 function Delete(id){
-    $('.hero-'+id).remove();
+    document.querySelector('.hero-'+id).remove();   //will remove from the html first and then from arr of local storage
     for(let i=0;i<arr.length;i++){
         if(arr[i].id==id){
            arr.splice(i,1);
