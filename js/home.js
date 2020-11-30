@@ -8,7 +8,7 @@
 
  search.onkeypress=function(){
    var name=search.value;
-   $('#cards').text("");
+   document.getElementById('cards').innerText="";
     var xhttp = new XMLHttpRequest(); 
     xhttp.open("get",`https://www.superheroapi.com/api.php/3509711479121402/search/${name}`, true);
     xhttp.send();
@@ -24,8 +24,7 @@
                     if(i===10){
                         break;
                     }
-                    $('#cards').append(`
-                  
+                    document.getElementById('cards').innerHTML+=`
                     <div class='card' id='id${obj.id}' onclick='setprofile(${obj.id})' ontouch='setprofile(${obj.id})'>
                     
                             <div class='hero' style="display:none">${JSON.stringify(obj)}</div>
@@ -42,7 +41,7 @@
                                 <b>&nbsp; + &nbsp; </b>
                                </div> 
                    </div> 
-                    `);
+                    `;
                 i=i+1;
                 }
        }
@@ -59,9 +58,7 @@ var temp;
 
 //when we click on any superhero after searching it will put it in local storage
 function setprofile(cardId){
-    var string="id"+cardId;
-    var obj=$("#"+string+" "+".hero").text();
-    
+    var obj=document.querySelector("#id"+cardId+" "+".hero").innerText;
     localStorage.setItem("temp",obj);
   }
 
@@ -72,13 +69,13 @@ function setprofile(cardId){
         if(l==str.length){
             clearInterval(interval);
         }
-        $('#details>h4').text(str.substring(0,l)+"|");
+        document.querySelector('#details>h4').innerText=str.substring(0,l)+"|";
         l++;
   },70);
 
 
    setInterval(() => {
-     var input=  $('input').val();
+     var input=  document.getElementsByTagName('input')[0].value;
        if(input!==""){
         $('#home').hide();
         $('#cards').show();
@@ -90,13 +87,14 @@ function setprofile(cardId){
 
 
 function AddToFav(data){
- var fav=$('#id'+data+" "+'.hero').text();
+ var fav=document.querySelector('#id'+data+" "+'.hero').innerText;
  var t=JSON.parse(fav);
  var Arr=JSON.parse(localStorage.getItem('arr'));
  Arr.push(t);
- $('#notification').css('opacity','1');
- setTimeout(function(){
-    $('#notification').css('opacity','0');
- },2000);
  localStorage.setItem('arr',JSON.stringify(Arr));
+
+  document.getElementById('notification').style.opacity=1;
+ setTimeout(function(){
+    document.getElementById('notification').style.opacity=0;
+},2000);
 }
