@@ -6,7 +6,6 @@ body{
     font-weight: 100;
     font-family: "Lucida Console", Courier, monospace;
 }
-
 #main{
     width:100%;
     height:auto;
@@ -16,11 +15,9 @@ body{
 }
 #pic{
     width:400px;
-    
     height: 400px;
     margin: auto;
     border-radius: 50rem;
-    
     overflow: hidden;
     box-shadow: 0 0 26px 3px black;
 }
@@ -38,7 +35,6 @@ img{
     height:auto;
     box-sizing: border-box;
     padding:10px;
-   
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -52,7 +48,6 @@ img{
     justify-content: center;
     align-items: center;
     position: relative;
-   
     overflow: hidden;
     box-shadow: -3px -3px 10px -2px black inset;
 }

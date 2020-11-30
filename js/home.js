@@ -13,7 +13,7 @@
     xhttp.open("get",`https://www.superheroapi.com/api.php/3509711479121402/search/${name}`, true);
     xhttp.send();
     xhttp.onload = function() {   
-     // will parse the response
+     // will parse the response to json
         let result=JSON.parse(xhttp.response);
        //if response is success take the array out of it and 
        //append the card div with all the details from the array
@@ -42,7 +42,6 @@
                                 <b>&nbsp; + &nbsp; </b>
                                </div> 
                    </div> 
-                  
                     `);
                 i=i+1;
                 }
