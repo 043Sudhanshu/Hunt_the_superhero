@@ -12,15 +12,15 @@ API end points used : /search/superheroname, /id\
 
 Flow of website :\
 
-# Home page
-The home page is very basic and simple you have a search bar and as you type in it the superheroes are shown in the realtime, You can either just search for any superhero/add it to favourites or know more about it.
+* Home page\
+The home page is very basic and simple you have a search bar and as you type in it the superheroes are shown in the realtime, You can either just search for any superhero/add it to favourites or know more about it.\
 
-# Favourite page
-Here You can see all your favourite superheroes, add them to favourites or remove them from favs.
+* Favourite page\
+Here You can see all your favourite superheroes, add them to favourites or remove them from favs.\
 
-# Profile(Superhero page)
-Now this is a page for serious fans and followers, in this page you can find out almost anything about any superhero.
+* Profile(Superhero page)\
+Now this is a page for serious fans and followers, in this page you can find out almost anything about any superhero.\
 
-I always welcome contributors, and also a lot of credit goes to the developer of API!
+I always welcome contributors, and also a lot of credit goes to the developer of API!\
 
 ENJOY!
