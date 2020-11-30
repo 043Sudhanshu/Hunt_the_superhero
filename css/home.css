@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap');
+
 body{
     margin:0;
     background-color: black;
+    font-family: 'Balsamiq Sans';
     height:100vh;
     width:100%;
 }
@@ -110,30 +113,31 @@ a{
     background-size: cover;
     overflow: hidden;
 }
+
 .one{
-    background-image: url('https://www.hdwallpapers.in/download/gal_gadot_wonder_woman_hd-HD.jpg');
+    background-image: url('../images/1.jpg');
     transform: translateZ(150px);
 }
 .two{
-    background-image:url('https://wallpapercave.com/wp/GRDCsEG.jpg');
+    background-image:url('../images/2.jpg');
     transform: translateZ(-150px);
 }
   .three{
-    background-image:url('https://cdn.vox-cdn.com/thumbor/chWzbOUL6qUxUoYwumoykRB1yZ4=/104x0:3104x2000/1400x933/filters:focal(104x0:3104x2000):no_upscale()/cdn.vox-cdn.com/uploads/chorus_image/image/45660742/spiderman.0.0.jpg');
+    background-image:url('../images/3.jpg');
     transform:rotateY(90deg) translateZ(150px) ;
 }
   .four{
-    background-image:url('https://images.hdqwalls.com/download/superman-4khenry-tj-1920x1080.jpg');
+    background-image:url('../images/4.jpg');
     transform: rotateY(-90deg) translateZ(150px);
 }
 .five{
-    background-image:url('https://cdn.hipwallpaper.com/i/66/1/Cd98Dg.jpg');
+    background-image:url('../images/5.jpg');
     transform: rotateX(90deg) translateZ(150px);
 }
 .six{
-    background-image:url('https://www.teahub.io/photos/full/192-1929863_venom-wallpaper-hd-venom.jpg');
+    background-image:url('../images/6.jpg');
     transform: rotateX(-90deg) translateZ(150px);
-}
+}   
 @keyframes change{
     from{
         transform: rotateY(0deg);
@@ -229,7 +233,4 @@ a{
     opacity: 0;
     transition: all 2s;
     border-radius: 10px;
-}
-h4{
-    text-shadow: 2px 2px;
 }
