@@ -1,13 +1,13 @@
 # Hunt_the_superhero
 This will help you to know the details of any superhero that you will search
 # Link for the website : 
-https://043sudhanshu.github.io/Hunt_the_superhero/home.html\
+https://043sudhanshu.github.io/Hunt_the_superhero/home.html  
 How to run the website/app?\
 Either clone the repo and run or just run on the hosted link.\
 \
 Brief information about website :\
 Superhero Hunter website is a plain website built upon vanilla js for the marvel and dc fanatics, just search any superhero and get the information about it. Also there is a favourite section which you can use to save your favourite heroes for fast access using local storage functionality.\
-API used : https://www.superheroapi.com/\
+API used : https://www.superheroapi.com/ &nbsp
 API end points used : /search/superheroname, /id\
 
 Flow of website :\
